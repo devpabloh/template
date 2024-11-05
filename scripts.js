@@ -61,7 +61,7 @@ newItem.classList.add("guest")
 
 //MANIPULANDO ATRIBUTOS
 
-const input = document.querySelector("input")
+/* const input = document.querySelector("input") */
 
 // setAttribute é usado para definir ou atualizar o valor de um atributo em um elemento HTML
 //sintaxe element.setAttribute(nomeatributo, valor)
@@ -69,11 +69,11 @@ const input = document.querySelector("input")
 input.setAttribute("type", "file") */
 
 // removendo atributos
-input.removeAttribute("id")
+/* input.removeAttribute("id")
 
 window.addEventListener("load", ()=>{
     console.log("A página foi carregada")
-})
+}) */
 
 //keydown - quando uma tecla é pressionada (capitura tudo, incluidno, CTRL, SHIFT,)
 /* 
@@ -84,6 +84,13 @@ input.addEventListener("keydown", (event)=>{
 
 // keypress - quando uma tecla do tipo caractere é pressionada (letra, números, pontos, etc.)
 
-input.addEventListener("keypress", (event)=>{
+/* input.addEventListener("keypress", (event)=>{
     console.log(event.key)
-})
+}) */
+
+const input = document.querySelector("input")
+
+// O evento de input é disparado quando você digita algo no mesmo
+input.addEventListener("input", ()=>{
+    console.log(input.value)
+}) 
