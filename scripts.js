@@ -1,10 +1,10 @@
-const guest = document.querySelector("#guest-1")
+/* const guest = document.querySelector("#guest-1") */
 
-console.log(guest.textContent) //retorna somente o conteúdo visível
-console.log(guest.innerText) // retorna o conteúdo visível e oculto
-console.log(guest.innerHTML) // retorna o HTML como texto
+//console.log(guest.textContent) //retorna somente o conteúdo visível
+//console.log(guest.innerText) // retorna o conteúdo visível e oculto
+// console.log(guest.innerHTML)  retorna o HTML como texto
 
-const input = document.querySelector("#name")
+/* const input = document.querySelector("#name") */
 
 // adicionando a classe
 /* input.classList.add("input-error") */
@@ -30,18 +30,31 @@ sabado - Costa e posterior de ombro
 domingo - Pernas (quadríceps e posterior)
 */
 
-const newGuest = document.createElement("li")
-const guestName = document.createElement("span")
+/* const newGuest = document.createElement("li")
+const guestName = document.createElement("span") */
 
-guestName.textContent = "Pablo"
+/* guestName.textContent = "Pablo" */
 
 //appendchild adiciona o elemento após o último filho
-newGuest.appendChild(guestName)
+/* newGuest.appendChild(guestName) */
 
-const guestSurname = document.createElement("span")
-guestSurname.textContent = "Henrique"
+/* const guestSurname = document.createElement("span") */
+/* guestSurname.textContent = "Henrique" */
 
 // adiciona antes do primeiro filho.
 /* newGuest.prepend(guestSurname) */
 
-console.log(newGuest)
+/* guest.append(newGuest) */
+
+
+let list = document.querySelector("ul")
+
+let newItem = document.createElement("li")
+let newPeople = document.createElement("span")
+newPeople.textContent = "Pablo"
+
+newItem.append(newPeople)
+
+list.append(newItem)
+
+newItem.classList.add("guest")
